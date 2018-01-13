@@ -1,4 +1,4 @@
-<h2>Notify low balance on TTK IPS</h2>
+Notify low balance on TTK IPS
 
 Класс контроллера YII2 Advanced проекта выполняет авторизацию в ЛК провайдера
 получает данные и уведомляет по смс если баланс ниже заданного числа.
