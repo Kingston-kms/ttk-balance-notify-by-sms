@@ -16,14 +16,13 @@ class TtkBalanceController extends Controller
     const LOGIN_URL = 'https://lk.ttk.ru/mpo/login.ttk';
     const POST_URL = 'https://lk.ttk.ru/mpo/login';
 
-    const ACC_LOGIN = '272001422';
-    const ACC_PASSWORD = 'qdtlmudn';
-    const ACC_URL_1 = 'https://lk.ttk.ru/mpo/pages/contract.ttk?id=7100910000000000630229';
-    const ACC_URL_2 = 'https://lk.ttk.ru/mpo/pages/contract.ttk?id=7100910000000000638559';
+    const ACC_LOGIN = '123456789';
+    const ACC_PASSWORD = 'password';
+    const ACC_URL = 'https://lk.ttk.ru/mpo/pages/contract.ttk?id=0000000000000000000000';
 
     const SMSRU_URL = 'https://sms.ru/sms/send';
-    const SMS_API = 'EF19A561-6882-CA54-BE8D-BFCD3139CAB4';
-    const SMS_NUM = '79244032692';
+    const SMS_API = 'put here api_id';
+    const SMS_NUM = '79991112233';
 
     const BALANCE_LIMIT = 50;
 
@@ -78,7 +77,7 @@ class TtkBalanceController extends Controller
         ]);
 
         return $client->createRequest()->setMethod('get')
-            ->setUrl(self::ACC_URL_1)
+            ->setUrl(self::ACC_URL)
             ->setCookies($cookies)
             ->send();
 
