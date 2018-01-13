@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kingston
- * Date: 13.01.2018
- * Time: 11:54
- */
 
 namespace console\controllers;
 
